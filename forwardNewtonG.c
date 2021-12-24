@@ -31,8 +31,8 @@ int main(){
   term=1;
   sum=0;
   for(i=1; i<10; i++){
-    term = term*y[i][n-1]*n/y[i][n]/(u-(n-1));
-    sum = sum + term;
+    term = term*(u-(n-1));
+    sum = sum + term*y[0][i];
   }
   printf("%f\n", sum);
 }
