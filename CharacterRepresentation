@@ -1,0 +1,7 @@
+// character prog
+#include<stdio.h> 
+int main(){
+	char x1 = 65;
+	//x1 = 44;
+    printf("%c  %d\n", x1, x1 );        
+}
