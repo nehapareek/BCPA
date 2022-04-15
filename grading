@@ -1,19 +1,19 @@
+//grading 
 #include <stdio.h>
 int main(){
 	int a;
 	printf("enter the marks obtained:");
 	scanf("%d",&a);
-	if (90<=a<=100){
+	if (100>=a && a>=90){
 	printf("grade is A");}
-	else if (80<=a<=89){
+	else if (89>=a && a>=80){
 	printf("grade is B");}
-	else if (70<=a<=79){
+	else if (79>=a && a>=70){
 	printf("grade is C");}
-	else if (50<=a<=69){
+	else if (69>=a && a>=50){
 	printf("grade is D");}
-	else if (35<=a<=49){
+	else if (49>=a && a>=35){
 	printf("grade is E");}
 	else{
 	printf("grade is F");}
 }
-//No matter what number I put result is always A only. please help !!
