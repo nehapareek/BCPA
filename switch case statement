@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(){
+	int num;
+	printf("give the value of num:");
+	scanf("%d", &num);
+	switch (num){
+		case 7:{
+			printf("The value is 7");
+			break;
+		}
+		case 8:{
+			printf("The value is 8");
+			break;
+		}
+		case 9:{
+			printf("The value is 9");
+			break;
+		}
+		default:{
+			printf("The value is not present, sorry for the inconvinence");
+			break;
+		}
+	}
+}
