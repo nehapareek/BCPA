@@ -1,0 +1,22 @@
+//electirc field error!!
+#include <stdio.h>
+#include <math.h>
+int k= 9*10^9;
+int main(){
+	float x1,x2,y1,y2,z1,z2,E1=0.0,E2=0.0,E3=0.0,q;
+	int i,j,n;
+	printf("give the values of number of charges:");
+	scanf("%d",&n);
+	printf("give the value of r vector:");
+	scanf("%f%f%f",&x1,&y1,&z1);
+	for (i=1;i<=n;i++){
+		printf("give value of q%d charge:",i);
+		scanf("%f",&q);
+		printf("give the value of %rd vector:",i);
+		scanf("%f%f%f",&x2,&y2,&z2);
+		E1= E1+(k*q*(x1-x2)/(pow(pow((x1-x2),2)+pow((y1-y2),2)+pow((z1-z2),2)),3/2));
+		E2= E2+(k*q*(y1-y2)/(pow(pow((x1-x2),2)+pow((y1-y2),2)+pow((z1-z2),2)),3/2));
+		E3= E3+(k*q*(z1-z2)/(pow(pow((x1-x2),2)+pow((y1-y2),2)+pow((z1-z2),2)),3/2));
+	}
+	printf("The Electric Field at point is E= %fi +%fj +%fk", E1,E2,E3);
+}
