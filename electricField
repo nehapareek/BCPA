@@ -1,4 +1,4 @@
-//electirc field error!!
+//electirc field due to multiple charges
 #include <stdio.h>
 #include <math.h>
 int k= 9*10^9;
@@ -14,9 +14,9 @@ int main(){
 		scanf("%f",&q);
 		printf("give the value of %rd vector:",i);
 		scanf("%f%f%f",&x2,&y2,&z2);
-		E1= E1+(k*q*(x1-x2)/(pow(pow((x1-x2),2)+pow((y1-y2),2)+pow((z1-z2),2)),3/2));
-		E2= E2+(k*q*(y1-y2)/(pow(pow((x1-x2),2)+pow((y1-y2),2)+pow((z1-z2),2)),3/2));
-		E3= E3+(k*q*(z1-z2)/(pow(pow((x1-x2),2)+pow((y1-y2),2)+pow((z1-z2),2)),3/2));
+		E1= E1+(k*q*(x1-x2)/pow(pow(x1-x2,2)+pow(y1-y2,2)+pow(z1-z2,2),3/2));
+		E2= E2+(k*q*(y1-y2)/pow(pow(x1-x2,2)+pow(y1-y2,2)+pow(z1-z2,2),3/2));
+		E3= E3+(k*q*(z1-z2)/pow(pow(x1-x2,2)+pow(y1-y2,2)+pow(z1-z2,2),3/2));
 	}
 	printf("The Electric Field at point is E= %fi +%fj +%fk", E1,E2,E3);
 }
