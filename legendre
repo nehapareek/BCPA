@@ -1,0 +1,22 @@
+//legendre polynomial
+#include <stdio.h>
+#include <math.h>
+float pn(float , int );
+int main(){
+	float x,p2,p3,p4;
+	int i;
+	printf("give the value of x:");
+	scanf("%f",&x);
+	p2= pn(x,2);
+	p3= pn(x,3);
+	p4= pn(x,4);
+	printf("The value of p2,p3,p4 are: %f, %f, %f",p2,p3,p4);
+}
+float pn(float x,int n){
+	if (n==0)
+	return 1.0;
+	if (n==1)
+	return x;
+	else
+	return ((2*n-1)*x*pn(x,n-1)-(n-1)*pn(x,n-2))/n;
+}
