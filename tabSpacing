@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main() {
+	printf("a\tb\n");
+	printf("aa\tb\n");
+	printf("aaa\tb\n");
+	printf("aaaa\tb\n");
+	printf("aaaaa\tb\n");
+	printf("aaaaaa\tb\n");
+	printf("aaaaaaa\tb\n");
+	printf("aaaaaaaa\tb\n");
+	printf("aaaaaaaaa\tb\n");
+	printf("aaaaaaaaaa\tb\n");
+}
